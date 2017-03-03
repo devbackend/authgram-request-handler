@@ -42,7 +42,7 @@ class AuthGramRequestHandler {
 	 * @author Ivan Krivonos <devbackend@yandex.ru>
 	 */
 	public function isValidToken() {
-		return ($this->request instanceof AuthRequest && $this->token === $this->request->token);
+		return (null !== $this->request && $this->token === $this->request->token);
 	}
 
 	/**
