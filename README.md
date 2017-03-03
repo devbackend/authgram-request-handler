@@ -6,20 +6,20 @@ This is library for handling authorise request of AuthGramBot. It get raw body o
 The recommended way to install the SDK is with [Composer](https://getcomposer.org/). Composer is a dependency management tool for PHP that allows you to declare the dependencies your project needs and installs them into your project.
  
 ```bash
-php composer.phar require devbackend/authgram-request-handler
+composer require devbackend/authgram-request-handler: '^1.0.0'
 ```
 
 If composer install globally in your system, you can run next command:
 
 ```bash
-composer require devbackend/authgram-request-handler
+composer require devbackend/authgram-request-handler: '^1.0.0'
 ```
 
 Alternatively, you can specify the SDK as a dependency in your project's existing composer.json file:
 ```json
 {
     "require" : {
-        "devbackend/authgram-request-handler": "1.0.0" 
+        "devbackend/authgram-request-handler": "1.0.*" 
     }
 }
 ```
