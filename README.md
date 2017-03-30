@@ -1,11 +1,11 @@
 AuthGram authorise request handler
 ==================================
 
-##Overview
+## Overview
 
 This is library for handling authorise request of AuthGramBot. It get raw body of POST request, parse and transform to PHP object which is ready for use in your project.
  
-##Installation
+## Installation
 The recommended way to install the SDK is with [Composer](https://getcomposer.org/). Composer is a dependency management tool for PHP that allows you to declare the dependencies your project needs and installs them into your project.
  
 ```bash
