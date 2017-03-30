@@ -1,4 +1,5 @@
-#AuthGram authorise request handler
+AuthGram authorise request handler
+==================================
 
 ##Overview
 
