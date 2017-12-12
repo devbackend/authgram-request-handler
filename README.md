@@ -22,7 +22,7 @@ Alternatively, you can specify the SDK as a dependency in your project's existin
 ```json
 {
     "require" : {
-        "devbackend/authgram-request-handler": "^1.0" 
+        "devbackend/authgram-request-handler": "^2.0" 
     }
 }
 ```
@@ -40,7 +40,8 @@ $requestHandler = new AuthGramRequestHandler\AuthGramRequestHandler('[APPLICATIO
 if ($requestHandler->isValidToken()) {
     $request = $requestHandler->getRequest();
 
-    $authKey = $request->authKey;
-    $user    = $request->user;
+    $authKey  = $request->getAuthKey();
+    $user     = $request->getUser();    
+    $username = $user->getUsername();
 }
 ```

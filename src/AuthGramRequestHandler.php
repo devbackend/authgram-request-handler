@@ -2,6 +2,7 @@
 namespace AuthGramRequestHandler;
 
 use AuthGramRequestHandler\exceptions\AuthgramRequestHandlerException;
+use AuthGramRequestHandler\objects\AuthgramRequest;
 use AuthGramRequestHandler\wrappers\AuthRequest;
 
 /**
@@ -31,7 +32,9 @@ class AuthGramRequestHandler {
 			throw new AuthgramRequestHandlerException('Error at getting AuthGramBot request');
 		}
 
-		$this->request = @json_decode($request);
+		$request = @json_decode($request, true);
+
+		$this->request = new AuthgramRequest($request);
 	}
 
 	/**
@@ -42,7 +45,7 @@ class AuthGramRequestHandler {
 	 * @author Ivan Krivonos <devbackend@yandex.ru>
 	 */
 	public function isValidToken() {
-		return (null !== $this->request && $this->token === $this->request->token);
+		return (null !== $this->request && $this->token === $this->request->getToken());
 	}
 
 	/**
