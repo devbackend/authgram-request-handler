@@ -1,8 +1,8 @@
 <?php
 
-namespace AuthGramRequestHandler\objects;
+namespace Devbackend\AuthGramRequestHandler\objects;
 
-use AuthGramRequestHandler\wrappers\User;
+use Devbackend\AuthGramRequestHandler\wrappers\User;
 
 /**
  * @inheritdoc

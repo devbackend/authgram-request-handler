@@ -1,5 +1,5 @@
 <?php
-namespace AuthGramRequestHandler\wrappers;
+namespace Devbackend\AuthGramRequestHandler\wrappers;
 
 /**
  * Interface for authorise request

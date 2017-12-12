@@ -14,7 +14,7 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"AuthGramRequestHandler\\": "src"
+			"Devbackend\\AuthGramRequestHandler\\": "src"
 		}
 	}
 }

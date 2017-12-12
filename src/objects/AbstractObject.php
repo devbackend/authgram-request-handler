@@ -1,8 +1,8 @@
 <?php
 
-namespace AuthGramRequestHandler\objects;
+namespace Devbackend\AuthGramRequestHandler\objects;
 
-use AuthGramRequestHandler\exceptions\UndefinedPropertyException;
+use Devbackend\AuthGramRequestHandler\exceptions\UndefinedPropertyException;
 
 /**
  * Abstract class for authgram object.
@@ -13,7 +13,7 @@ abstract class AbstractObject {
 	/**
 	 * @param array $instance
 	 *
-	 * @throws UndefinedPropertyException
+	 * @throws \Devbackend\AuthGramRequestHandler\exceptions\UndefinedPropertyException
 	 *
 	 * @author Ivan Krivonos <devbackend@yandex.ru>
 	 */

@@ -1,6 +1,6 @@
 <?php
 
-namespace AuthGramRequestHandler\exceptions;
+namespace Devbackend\AuthGramRequestHandler\exceptions;
 
 use Exception;
 

@@ -1,9 +1,9 @@
 <?php
-namespace AuthGramRequestHandler;
+namespace Devbackend\AuthGramRequestHandler;
 
-use AuthGramRequestHandler\exceptions\AuthgramRequestHandlerException;
-use AuthGramRequestHandler\objects\AuthgramRequest;
-use AuthGramRequestHandler\wrappers\AuthRequest;
+use Devbackend\AuthGramRequestHandler\exceptions\AuthgramRequestHandlerException;
+use Devbackend\AuthGramRequestHandler\objects\AuthgramRequest;
+use Devbackend\AuthGramRequestHandler\wrappers\AuthRequest;
 
 /**
  * Handler of AuthGramBot authorise request.
@@ -20,7 +20,7 @@ class AuthGramRequestHandler {
 	/**
 	 * @param string $token Application token
 	 *
-	 * @throws AuthgramRequestHandlerException
+	 * @throws \Devbackend\AuthGramRequestHandler\exceptions\AuthgramRequestHandlerException
 	 *
 	 * @author Ivan Krivonos <devbackend@yandex.ru>
 	 */

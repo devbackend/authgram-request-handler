@@ -35,7 +35,7 @@ require vendor/autoload.php;
 
 And create instance of request handler by passing to it constructor your application token:
 ```php
-$requestHandler = new AuthGramRequestHandler\AuthGramRequestHandler('[APPLICATION_TOKEN]');
+$requestHandler = new Devbackend\AuthGramRequestHandler\AuthGramRequestHandler('[APPLICATION_TOKEN]');
 
 if ($requestHandler->isValidToken()) {
     $request = $requestHandler->getRequest();
